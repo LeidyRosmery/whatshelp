@@ -44,7 +44,6 @@ $('#btn-messenger').on('click', function() {
 
 $('.close-fb').on('click', function() {
     //animationIn();
-
     $('.tooltip').removeClass('hidden-tooltip');
     $('.tooltip').addClass('show-tooltip');
     $('.plus').removeClass('animate-plus-in');
@@ -61,6 +60,7 @@ $('.close-fb').on('click', function() {
     $('.message-fb').removeClass('fb-out');
     $('.message-fb').addClass('fb-in');
 });
+
 
 $('#btn-whatsapp').on('click', function() {
     window.open('https://api.whatsapp.com/send?phone=51999098154', '_system');

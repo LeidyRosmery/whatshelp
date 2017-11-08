@@ -261,6 +261,7 @@ body {
     width: 30px;
     height: 30px;
 }
+
 .close-fb, .close-fb svg {
     width: 24px;
     height: 24px;
@@ -358,26 +359,26 @@ body {
 }
 
 .tooltiptext {
-  opacity: 0;
-      width: 134.5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      transform: translate(-30%, -50%);
-      box-shadow: 4px 3px 15px 0px rgba(0, 0, 0, 0.3);
-      border-radius: 4px;
-      animation: callToActionLeft 0.8s;
-      transition: all 0.8s;
-      background: white;
-      text-align: center;
-      padding: 4px 9px 6px 9px;
-      /* white-space: nowrap; */
-      font-size: 13px;
-      font-weight: 300;
-      font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    opacity: 0;
+    width: 134.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-30%, -50%);
+    box-shadow: 4px 3px 15px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    animation: callToActionLeft 0.8s;
+    transition: all 0.8s;
+    background: white;
+    text-align: center;
+    padding: 4px 9px 6px 9px;
+    /* white-space: nowrap; */
+    font-size: 13px;
+    font-weight: 300;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
 .nds:hover .tooltiptext {
@@ -457,4 +458,8 @@ body {
     transform: translateX(-50%) translateY(-50%) rotate(45deg);
     top: 10px;
     left: 1%;
+}
+
+#container-floating:focus, #floating-button:focus {
+    outline: 0px;
 }
