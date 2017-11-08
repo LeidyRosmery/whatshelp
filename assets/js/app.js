@@ -62,7 +62,7 @@ $('.close-fb').on('click', function() {
 });
 
 $('#btn-whatsapp').on('click', function() {
-    window.open('https://api.whatsapp.com/send?phone=51999098154', '_blank');
+    window.open('https://api.whatsapp.com/send?phone=51999098154', '_system');
 });
 /*version mobil*/
 
@@ -72,6 +72,10 @@ if (isAndroid) {
     $(document).find('.tooltiptext').remove();
     $('#btn-messenger').off('click');
     $('#btn-messenger').on('click', function() {
-        window.open('https://m.me/XYZ', '_blank');
+        window.open('https://m.me/XYZ', '_system');
     });
+  /*  $('#container-floating').off('mouseout');
+    $('#container-floating').on('click',function(){
+        animationOut();
+    });*/
 }
