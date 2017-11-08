@@ -73,7 +73,7 @@ if (isAndroid) {
     $(document).find('.tooltiptext').remove();
     $('#btn-messenger').off('click');
     $('#btn-messenger').on('click', function() {
-        window.open('https://m.me/XYZ', '_system');
+      window.open('fb://messaging/compose/104392946274411');
     });
     $('#container-floating').off('mouseout');
     $('#container-floating').off('mouseover');
