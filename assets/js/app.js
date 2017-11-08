@@ -1,3 +1,4 @@
+let estado = false;
 const animationIn = () => {
     $('.tooltip').addClass('hidden-tooltip');
     $('#container-floating').css('height', '150px');
@@ -74,8 +75,19 @@ if (isAndroid) {
     $('#btn-messenger').on('click', function() {
         window.open('https://m.me/XYZ', '_system');
     });
-  /*  $('#container-floating').off('mouseout');
-    $('#container-floating').on('click',function(){
+    $('#container-floating').off('mouseout');
+    $('#container-floating').off('mouseover');
+    $('#container-floating').on('click', function() {
+      if(estado){
+        console.log('true');
         animationOut();
-    });*/
+        estado=false;
+      }else{
+        console.log('false');
+        animationIn();
+        estado=true;
+      }
+
+    });
+
 }
