@@ -64,3 +64,9 @@ $('.close-fb').on('click', function() {
 $('#btn-whatsapp').on('click', function() {
     window.open('https://api.whatsapp.com/send?phone=51991167297', '_blank');
 });
+/*version mobil*/
+
+var isAndroid = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase());
+if (isAndroid) {
+    $(document).find('.tooltip').remove();
+}
