@@ -62,7 +62,7 @@ $('.close-fb').on('click', function() {
 });
 
 $('#btn-whatsapp').on('click', function() {
-    window.open('https://api.whatsapp.com/send?phone=51991167297', '_blank');
+    window.open('https://api.whatsapp.com/send?phone=51999098154', '_blank');
 });
 /*version mobil*/
 
