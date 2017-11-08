@@ -69,6 +69,7 @@ $('#btn-whatsapp').on('click', function() {
 var isAndroid = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase());
 if (isAndroid) {
     $(document).find('.tooltip').remove();
+    $(document).find('.tooltiptext').remove();
     $('#btn-messenger').off('click');
     $('#btn-messenger').on('click', function() {
         window.open('https://m.me/XYZ', '_blank');
