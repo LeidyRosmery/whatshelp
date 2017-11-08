@@ -13,7 +13,7 @@ const animationOut = () => {
     $('.plus').removeClass('animate-plus-in');
     $('.plus').addClass('animate-plus-out');
     $('.close-widget').removeClass('animate-close-widget-in');
-    $('.close-widget').addClass('animate-close-widget-out')
+    $('.close-widget').addClass('animate-close-widget-out');
     $('.nd3').removeClass('animate-nd3-in');
     $('.nd1').removeClass('animate-nd1-in');
     $('.nd3').addClass('animate-nd3-out');
@@ -42,7 +42,14 @@ $('#btn-messenger').on('click', function() {
 /*animation btn button message*/
 
 $('.close-fb').on('click', function() {
-    animationIn();
+    //animationIn();
+
+    $('.tooltip').removeClass('hidden-tooltip');
+    $('.tooltip').addClass('show-tooltip');
+    $('.plus').removeClass('animate-plus-in');
+    $('.plus').addClass('animate-plus-out');
+    $('.close-widget').removeClass('animate-close-widget-in');
+    $('.close-widget').addClass('animate-close-widget-out')
     $('#container-floating').on('mouseover', function() {
         animationIn();
     });
