@@ -73,20 +73,21 @@ if (isAndroid) {
     $(document).find('.tooltiptext').remove();
     $('#btn-messenger').off('click');
     $('#btn-messenger').on('click', function() {
-      window.open('fb://messaging/compose/104392946274411');
+        window.open('fb://messaging/compose/104392946274411');
     });
     $('#container-floating').off('mouseout');
     $('#container-floating').off('mouseover');
+    $('#floating-button').css('cursor', 'none');
     $('#container-floating').on('click', function() {
-      if(estado){
-        console.log('true');
-        animationOut();
-        estado=false;
-      }else{
-        console.log('false');
-        animationIn();
-        estado=true;
-      }
+        if (estado) {
+            console.log('true');
+            animationOut();
+            estado = false;
+        } else {
+            console.log('false');
+            animationIn();
+            estado = true;
+        }
 
     });
 
