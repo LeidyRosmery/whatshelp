@@ -415,14 +415,14 @@ body {
     }
     100% {
         opacity: 1;
-        right: 20px;
+        right: 10px;
     }
 }
 
 @keyframes callTooltipLeft {
     0% {
         opacity: 1;
-        right: 20px;
+        right: 10px;
     }
     100% {
         opacity: 0;
@@ -462,4 +462,4 @@ body {
 
 #container-floating:focus, #floating-button:focus {
     outline: 0px;
-}
+too}
