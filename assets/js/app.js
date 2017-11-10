@@ -4,8 +4,8 @@ const animationIn = () => {
     $('#container-floating').css('height', '150px');
     $('.plus').addClass('animate-plus-in');
     $('.close-widget').addClass('animate-close-widget-in');
-    $('.nd3').addClass('animate-nd3-in');
-    $('.nd1').addClass('animate-nd1-in');
+    $('.nds--nd3').addClass('animate-nd3-in');
+    $('.nds--nd1').addClass('animate-nd1-in');
 }
 
 const animationOut = () => {
@@ -15,17 +15,15 @@ const animationOut = () => {
     $('.plus').addClass('animate-plus-out');
     $('.close-widget').removeClass('animate-close-widget-in');
     $('.close-widget').addClass('animate-close-widget-out');
-    $('.nd3').removeClass('animate-nd3-in');
-    $('.nd1').removeClass('animate-nd1-in');
-    $('.nd3').addClass('animate-nd3-out');
-    $('.nd1').addClass('animate-nd1-out');
+    $('.nds--nd3').removeClass('animate-nd3-in');
+    $('.nds--nd1').removeClass('animate-nd1-in');
+    $('.nds--nd3').addClass('animate-nd3-out');
+    $('.nds--nd1').addClass('animate-nd1-out');
 }
 
 $('#container-floating').mouseover(function() {
     animationIn();
 });
-/*refactorizando codigo*/
-
 
 $('#container-floating').on('mouseout', function() {
     animationOut();
@@ -37,8 +35,8 @@ $('#btn-messenger').on('click', function() {
     $('.message-fb').removeClass('fb-in');
     $('#container-floating').css('height', '52px');
     $('.message-fb').addClass('fb-out');
-    $('.nd3').removeClass('animate-nd3-in');
-    $('.nd1').removeClass('animate-nd1-in');
+    $('.nds--nd3').removeClass('animate-nd3-in');
+    $('.nds--nd1').removeClass('animate-nd1-in');
 });
 /*animation btn button message*/
 
