@@ -24,7 +24,7 @@ body {
   bottom: 20px;
   right: 25px;
   cursor: pointer;
-  box-shadow: 0px 2px 5px #666; }
+  box-shadow: 0 2px 5px #666; }
 
 /*css plus animacion*/
 @keyframes plus-in {
@@ -119,7 +119,7 @@ body {
   transform: scale(0);
   cursor: pointer;
   right: 25px;
-  box-shadow: 0px 2px 5px #666; }
+  box-shadow: 0 2px 5px #666; }
   .nds--nd1 {
     background: #4EC248;
     bottom: 85px; }
@@ -172,7 +172,8 @@ body {
   width: 30px;
   height: 30px; }
 
-.close-fb, .close-fb svg {
+.close-fb,
+.close-fb svg {
   width: 24px;
   height: 24px; }
 
@@ -210,47 +211,34 @@ body {
     bottom: 300px; } }
 .message-fb {
   opacity: 0; }
-
-/*
-.message-fb {
-    opacity: 0;
-
-  &&--header-fb{
-
-  }
-
-}*/
-.header-fb {
-  height: 47px;
-  box-shadow: 7px 7px 15px 8px rgba(0, 0, 0, 0.17);
-  width: 298px;
-  position: fixed;
-  border-radius: 10px 10px 0 0;
-  z-index: 10;
-  right: 30px;
-  bottom: 392px;
-  background: #0084FF;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  line-height: 23px;
-  display: flex;
-  justify-content: space-between;
-  -webkit-justify-content: space-between;
-  align-items: center;
-  padding: 0 8px;
-  box-sizing: border-box; }
-
-.send-fb {
-  width: 298px;
-  right: 30px;
-  bottom: 92px;
-  position: absolute;
-  height: 298px; }
-
-.clear-fb {
-  clear: both; }
-
-.close-fb {
-  cursor: pointer; }
+  .message-fb--header-fb {
+    height: 47px;
+    box-shadow: 7px 7px 15px 8px rgba(0, 0, 0, 0.17);
+    width: 298px;
+    position: fixed;
+    border-radius: 10px 10px 0 0;
+    z-index: 10;
+    right: 30px;
+    bottom: 392px;
+    background: #0084FF;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    line-height: 23px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box; }
+    .message-fb--header-fb__close-fb {
+      cursor: pointer; }
+  .message-fb--send-fb {
+    width: 298px;
+    right: 30px;
+    bottom: 92px;
+    position: absolute;
+    height: 298px; }
+  .message-fb--clear-fb {
+    clear: both; }
 
 .fb-out {
   animation: fb-in 0.8s linear;
@@ -275,29 +263,7 @@ body {
   100% {
     opacity: 0;
     right: 15%; } }
-.tooltiptext {
-  opacity: 0;
-  width: 134.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(-30%, -50%);
-  box-shadow: 4px 3px 15px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-  animation: callToActionLeft 0.8s;
-  transition: all 0.8s;
-  background: white;
-  text-align: center;
-  padding: 4px 9px 6px 9px;
-  /* white-space: nowrap; */
-  font-size: 13px;
-  font-weight: 300;
-  font-family: Arial, Helvetica Neue, Helvetica, sans-serif; }
-
-.nds:hover .tooltiptext {
+.nds:hover .tooltip--text {
   animation: callToActionRight 0.15s linear;
   animation-fill-mode: forwards; }
 
@@ -315,18 +281,38 @@ body {
   right: 10px;
   cursor: pointer;
   transform: translate(-50%, -50%);
-  box-shadow: 4px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 3px 15px 0 rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   display: flex;
   align-items: center; }
-
-.tooltip__arrow {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 14px;
-  left: 100%;
-  overflow: hidden; }
+  .tooltip--text {
+    opacity: 0;
+    width: 134.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-30%, -50%);
+    box-shadow: 4px 3px 15px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    animation: callToActionLeft 0.8s;
+    transition: all 0.8s;
+    background: white;
+    text-align: center;
+    padding: 4px 9px 6px 9px;
+    /* white-space: nowrap; */
+    font-size: 13px;
+    font-weight: 300;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif; }
+  .tooltip__arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 14px;
+    left: 100%;
+    overflow: hidden; }
 
 .tooltip__arrow::after {
   content: "";
@@ -336,7 +322,7 @@ body {
   background: white;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   top: 10px;
-  left: 0%; }
+  left: 0; }
 
 @keyframes callTooltipRight {
   0% {

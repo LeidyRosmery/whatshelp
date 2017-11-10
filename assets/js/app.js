@@ -40,7 +40,7 @@ $('#btn-messenger').on('click', function() {
 });
 /*animation btn button message*/
 
-$('.close-fb').on('click', function() {
+$('.message-fb--header-fb__close-fb').on('click', function() {
     //animationIn();
     $('.tooltip').removeClass('hidden-tooltip');
     $('.tooltip').addClass('show-tooltip');
@@ -68,7 +68,7 @@ $('#btn-whatsapp').on('click', function() {
 var isAndroid = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase());
 if (isAndroid) {
     $(document).find('.tooltip').remove();
-    $(document).find('.tooltiptext').remove();
+    $(document).find('.tooltip__arrow').remove();
     $('#btn-messenger').off('click');
     $('#btn-messenger').on('click', function() {
         window.open('fb://messaging/compose/104392946274411');
