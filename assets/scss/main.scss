@@ -98,6 +98,7 @@ body {
     animation-fill-mode: forwards;
 }
 /*animacion cross close widget*/
+@mixin name {}
 @keyframes close-widget-in {
     from {
         opacity: 0;
@@ -262,10 +263,10 @@ body {
     }
 }
 
-.message-fb {
+.fb {
     opacity: 0;
 
-    &--header-fb {
+    &--header {
         height: 47px;
         box-shadow: 7px 7px 15px 8px rgba(0, 0, 0, 0.17);
         width: 298px;
@@ -284,12 +285,12 @@ body {
         padding: 0 8px;
         box-sizing: border-box;
 
-        &__close-fb {
+        &__close {
             cursor: pointer;
         }
     }
 
-    &--send-fb {
+    &--send {
         width: 298px;
         right: 30px;
         bottom: 92px;
@@ -297,7 +298,7 @@ body {
         height: 298px;
     }
 
-    &--clear-fb {
+    &--clear {
         clear: both;
     }
 }
@@ -395,6 +396,7 @@ body {
     top: $tooltipArrow/2;
     left: 0;
 }
+
 @keyframes callTooltipRight {
     0% {
         opacity: 0;

@@ -200,9 +200,9 @@ body {
   to {
     opacity: 0;
     bottom: 300px; } }
-.message-fb {
+.fb {
   opacity: 0; }
-  .message-fb--header-fb {
+  .fb--header {
     height: 47px;
     box-shadow: 7px 7px 15px 8px rgba(0, 0, 0, 0.17);
     width: 298px;
@@ -220,15 +220,15 @@ body {
     align-items: center;
     padding: 0 8px;
     box-sizing: border-box; }
-    .message-fb--header-fb__close-fb {
+    .fb--header__close {
       cursor: pointer; }
-  .message-fb--send-fb {
+  .fb--send {
     width: 298px;
     right: 30px;
     bottom: 92px;
     position: absolute;
     height: 298px; }
-  .message-fb--clear-fb {
+  .fb--clear {
     clear: both; }
 
 .fb-out {

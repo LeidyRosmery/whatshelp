@@ -32,15 +32,15 @@ $('#container-floating').on('mouseout', function() {
 $('#btn-messenger').on('click', function() {
     $('#container-floating').off('mouseover');
     $('#container-floating').off('mouseout');
-    $('.message-fb').removeClass('fb-in');
+    $('.fb').removeClass('fb-in');
     $('#container-floating').css('height', '52px');
-    $('.message-fb').addClass('fb-out');
+    $('.fb').addClass('fb-out');
     $('.nds--nd3').removeClass('animate-nd3-in');
     $('.nds--nd1').removeClass('animate-nd1-in');
 });
 /*animation btn button message*/
 
-$('.message-fb--header-fb__close-fb').on('click', function() {
+$('.fb--header__close').on('click', function() {
     //animationIn();
     $('.tooltip').removeClass('hidden-tooltip');
     $('.tooltip').addClass('show-tooltip');
@@ -55,8 +55,8 @@ $('.message-fb--header-fb__close-fb').on('click', function() {
         animationOut();
     });
     $('#container-floating').css('height', '52px');
-    $('.message-fb').removeClass('fb-out');
-    $('.message-fb').addClass('fb-in');
+    $('.fb').removeClass('fb-out');
+    $('.fb').addClass('fb-in');
 });
 
 
