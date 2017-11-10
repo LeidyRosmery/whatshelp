@@ -2,8 +2,8 @@ let estado = false;
 const animationIn = () => {
     $('.tooltip').addClass('hidden-tooltip');
     $('#container-floating').css('height', '150px');
-    $('.plus').addClass('animate-plus-in');
-    $('.close-widget').addClass('animate-close-widget-in');
+    $('.main--open').addClass('animate-open-in');
+    $('.main--close').addClass('animate-close-widget-in');
     $('.nds--nd3').addClass('animate-nd3-in');
     $('.nds--nd1').addClass('animate-nd1-in');
 }
@@ -11,10 +11,10 @@ const animationIn = () => {
 const animationOut = () => {
     $('.tooltip').removeClass('hidden-tooltip');
     $('.tooltip').addClass('show-tooltip');
-    $('.plus').removeClass('animate-plus-in');
-    $('.plus').addClass('animate-plus-out');
-    $('.close-widget').removeClass('animate-close-widget-in');
-    $('.close-widget').addClass('animate-close-widget-out');
+    $('.main--open').removeClass('animate-open-in');
+    $('.main--open').addClass('animate-open-out');
+    $('.main--close').removeClass('animate-close-widget-in');
+    $('.main--close').addClass('animate-close-widget-out');
     $('.nds--nd3').removeClass('animate-nd3-in');
     $('.nds--nd1').removeClass('animate-nd1-in');
     $('.nds--nd3').addClass('animate-nd3-out');
@@ -44,10 +44,10 @@ $('.message-fb--header-fb__close-fb').on('click', function() {
     //animationIn();
     $('.tooltip').removeClass('hidden-tooltip');
     $('.tooltip').addClass('show-tooltip');
-    $('.plus').removeClass('animate-plus-in');
-    $('.plus').addClass('animate-plus-out');
-    $('.close-widget').removeClass('animate-close-widget-in');
-    $('.close-widget').addClass('animate-close-widget-out')
+    $('.main--open').removeClass('animate-open-in');
+    $('.main--open').addClass('animate-open-out');
+    $('.main--close').removeClass('animate-close-widget-in');
+    $('.main--close').addClass('animate-close-widget-out')
     $('#container-floating').on('mouseover', function() {
         animationIn();
     });
